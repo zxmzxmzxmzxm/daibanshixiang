@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body,html{
+    background: #ccc;
+    position: relative;
+    height: 100%;
+}
+.swiper-container{
+    width: 100%;
+    height: 20vh;
+    background: red;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.type{
+    width: 100%;
+    height: 10vh;
+    position: relative;
+}
+.project,.done{
+    width:50%;
+    height: 10vh;
+    float: left;
+    line-height: 10vh;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    background: #333;
+    color: #fff;
+}
+.project{
+    background: green;
+
+}
+.done{
+    background: blue;
+}
+.content{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+}
+.content ul{
+    width: 100vw;
+    height: auto;
+}
+.content ul li{
+    width: 100vw;
+    height: 8vh;
+    line-height: 8vh;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.itemlist li p{
+    width: 60vw;
+    height: 8vh;
+    float: left;
+    line-height: 6vh;
+    white-space: nowrap;     //强制不换行
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 12px;
+}
+.itemlist li time{
+    width: 30vw;
+    line-height: 4vh;
+    height:8vh;
+    background: pink;
+    float: left;
+    font-size: 12px;
+}
+.itemlist li span{
+    width: 10vw;
+    height: 8vh;
+    background: green;
+    text-align: center;
+    line-height: 6vh;
+    float: right;
+    font-size: 16px;
+}
+.itemlist li span.active{
+    color: red;
+}
+.itemlist li div{
+    width: 20vw;
+    height: 8vh;
+    background: red;
+    color: #fff;
+    line-height: 8vh;
+    position: absolute;
+    top: 0;
+    right: -20vw;
+}
+.add{
+    width: 100vw;
+    height: 10vh;
+    background: yellow;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 20px;
+    color: #fff;
+}
+.mask{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.67);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 9;
+    display: none;
+}
+#text{
+    width: 100%;
+    height: 40vh;
+    border: none;
+    resize: none;
+    padding:10vw;
+    font-size: 16px;
+    display: block;
+}
+.inputarea{
+    width: 100vw;
+    height: 62vh;
+    transform: translateY(-62vh);
+}
+.submit,.update{
+    width: 100vw;
+    height: 10vh;
+    background: deepskyblue;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 20px;
+    color: #fff;
+}
+.update{
+    /*display: none;*/
+}
+.cancel{
+    width: 6vh;
+    height: 6vh;
+    margin:3vh auto;
+    border: 1px solid #999;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 6vh;
+}
